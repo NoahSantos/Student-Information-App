@@ -30,7 +30,6 @@ const College = () => {
       <CreateStudent newStudent={newStudent}></CreateStudent>
       <div className='studentCont'>
         {students.map(student=>{
-          console.log(student)
           return (
             <StudentList key={student.id} data={student} removeStudent={removeStudent}></StudentList>
           )
